@@ -271,6 +271,8 @@ var projection = d3.geoNaturalEarth()
     .translate([width / 2, height / 2])
 
   var markers = [{"name": "59.52.224.9", "ampFactor": 7.9545, "radius": 3.97725, "fillKey": 1, "lat": 28.1938, "long": 115.7836, "city": "Jianguang", "country": "China", "protocol": "dns"}, {"name": "146.88.66.214", "ampFactor": 62.6061, "radius": 31.30305, "fillKey": 1, "lat": 14.6477, "long": 121.0493, "city": "Quezon City", "country": "Philippines", "protocol": "dns"}, {"name": "220.247.172.229", "ampFactor": 0.0, "radius": 0.0, "fillKey": 1, "lat": -6.1741, "long": 106.8296, "city": "Jakarta", "country": "Indonesia", "protocol": "dns"}];
+
+
 // Load external data and boot
 d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson", function(data){
 

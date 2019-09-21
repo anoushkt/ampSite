@@ -1,8 +1,120 @@
+
 <!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<h1>Choose your options</h1>
+
+<title>eyeorg</title>
+<meta name="description" content="A website to visualise amp maps">
+
+<!-- Open Sans font -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
 
+<!-- Latest compiled and minified Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Bootstrap CSS w/ custom brand color -->
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Our own CSS tweaks -->
+<link href="/css/custom.css" rel="stylesheet">
+
+<!-- favicon -->
+<link rel="icon"
+    type="image/png"
+    href="">
+
+<!-- facebook shares -->
+<meta property="og:image" content="http://getfoodsniffer.com/wp-content/uploads/2018/10/free-logo-templates-sample-circular-wave-logo-template-1061-224.jpg" />
+
+<meta property="og:image:secure_url" content="http://getfoodsniffer.com/wp-content/uploads/2018/10/free-logo-templates-sample-circular-wave-logo-template-1061-224.jpg" />
+
+</head>
+
+
+<body>
+
+<div class="container" style="margin-top: 10px; margin-bottom: 20px">
+<div class="row">
+
+  <div class="col-sm-12">
+
+    <nav class="navbar" role="navigation" style="margin-bottom: 0">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" style="margin-top:-10px" href="/index.html"><img src="http://getfoodsniffer.com/wp-content/uploads/2018/10/free-logo-templates-sample-circular-wave-logo-template-1061-224.jpg" height="40px"></a>
+      </div>
+
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!-- LINKS (right) -->
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://localhost:3000/articles">Home</a></li>
+        <li><a href="http://localhost:3000/articles/new">Visualise</a></li>
+        <li><a href="http://localhost:3000/articles/about">About</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+
+      </div><!-- /.container-fluid -->
+    </nav><!-- navbar -->
+
+    <hr style="margin-top: 5px; margin-bottom: 0px;">
+  </div>  <!-- col -->
+
+</div>  <!-- row -->
+
+
+
+<!-- ALERTS -->
+<div class="row">
+  <div class="col-md-12" id="alerts-container">
+  </div>  <!-- col -->
+</div>  <!-- row -->
+
+</div> <!-- container -->
+
+
+<footer>
+
+<div class="row" style="margin-top: 100px">
+
+</div>  <!-- row -->
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- bbq jquery plugin (for query string deparam function) -->
+<script src="/js/jquery.ba-bbq.min.js"></script>
+
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+<!-- Common js code -->
+<script src="/js/common.js"></script>
+
+<!-- page-specific scripts, if any -->
+
+
+
+    <!-- Google analytics -->
+
+<h1 style="font-family: Futura;color:maroon;background-color: lightgrey; position:absolute; left:30px; top:95px;font-size: 25px;border: 3px solid #000000;">Countries</h1>
+<h2  style="font-family: Futura;color:maroon;background-color: lightgrey;position:absolute; left:270px; top:90px;font-size: 25px;border: 3px solid #000000;">Protocols</h2>
+<h3  style="font-family: Futura;color:maroon;background-color: lightgrey;position:absolute; left:514px; top:90px;font-size: 25px;border: 3px solid #000000;">Amp Factor</h3>
 
 <script>     function update(){
      // For each check box:
@@ -24,19 +136,17 @@
 <meta charset="utf-8">
 <style>
 .dropdown {
-    background-color: black;
-    color: white;
     padding: 20px 20px;
     font-size: 30px;
     border: none;
     width:120px;
-    font-family: "Times New Roman", Times, serif;
-
-
-
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   font-color: "white"
+  position: absolute;
+  left: 30px;
+  top: 65px;
 }
 .dropdown-content {
-
       display: none;
       position: absolute;
       background-color: lightgrey;
@@ -47,13 +157,11 @@
 }
 .dropdown:hover .dropdown-content {
   display: block;
-
 }
 </style>
 
-<div class="dropdown">
-  <span>Countries</span>
-  <div class="dropdown-content" style="width:200px;">
+<div class="dropdown" style="position:absolute; left:50px; top:108px; max-height:500px;overflow:scroll;">
+  <div class="dropdown-content" style="position:relative;top:35px;width:100px;overflow:scroll;max-height:500px;">
     <input type="checkbox" class="checkbox" value="Afghanistan" checked> <label> Afghanistan</label>
     <br>
     <input type="checkbox" class="checkbox" value="Åland Islands" checked><label>Åland Islands</label>
@@ -299,40 +407,35 @@
     <br><input type="checkbox" class="checkbox" value="Zimbabwe" checked><label>Zimbabwe</label>
   </div>
 </div>
-<div style = "position:absolute; left:250px; top:98px; background-color:lightgrey; font-size:25px; color:"white;"">
-    <h2>Protocols</h2>
-  
+<div class="dropdown" style="position:absolute; left:280px; top:98px;font-size: 30px;">
+
+    <div class="dropdown-content" style="position:relative;top:45px;width:200px;">
     <input type="radio" id="contactChoice1"
      name="contact" value="dns" checked onclick="update()">
     <label for="contactChoice1">dns</label>
+    <br>
 
 
     <input type="radio" id="contactChoice2"
      name="contact" value="dnsallfilter" onclick="update()">
     <label for="contactChoice2">dnsallfilter</label>
-
+    <br>
     <input type="radio" id="contactChoice3"
      name="contact" value="ntpPrivate" onclick="update()">
     <label for="contactChoice3">ntpPrivate</label>
-
+    <br>
 
       <input type="radio" id="contactChoice4"
        name="contact" value="chargen" onclick="update()">
       <label for="contactChoice4">chargen</label>
 
-      <input type="radio" id="contactChoice5"
+      <br><input type="radio" id="contactChoice5"
        name="contact" value="ssdp" onclick="update()">
       <label for="contactChoice5">ssdp</label>
+      </div>
 
 
 </div>
-
-
-<form style = "position:absolute; left:950px; top:98px;">
-  Amp Factor:<br>
-  <input type="number" id="myNumber" name=AF><br>
-</form>
-
 
 <script>
 function myFunction() {update();
@@ -346,7 +449,7 @@ function myFunction() {update();
 
 
 <!-- Create an element where the map will take place -->
-<svg id="my_dataviz" width="1000" height="1000"></svg>
+<svg id="my_dataviz" width="1350" height="1000"></svg>
 <script>
 // The svg
 var svg = d3.select("svg"),
@@ -401,7 +504,7 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/w
                    }
                    // When a button change, I run the update function
                    d3.selectAll(".checkbox").on("change",update);
-                   d3.selectAll(".radio").on("change",update);
+                   d3.selectAll(".checkbox").on("change",update);
                    // And I initialize it at the beginning
                    update()
 })
